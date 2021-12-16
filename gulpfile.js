@@ -1,6 +1,6 @@
 const gulp = require('gulp');
 const scss = require('gulp-sass')(require('sass'));
-const clean_css = require('gulp-clean-css');
+const cleanCss = require('gulp-clean-css');
 const rename = require('gulp-rename');
 const ts = require('gulp-typescript');
 const uglify = require('gulp-uglify-es').default;
@@ -9,7 +9,7 @@ const browserSync = require('browser-sync').create();
 function followStyles() {
   return gulp.src('src/style/**/*.scss')
     .pipe(scss())
-    .pipe(clean_css())
+    .pipe(cleanCss())
     .pipe(
       rename({
         extname: '.min.css'
