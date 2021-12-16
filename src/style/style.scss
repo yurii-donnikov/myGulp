@@ -1,0 +1,151 @@
+.cardBlock{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+.clientCard{
+    width: 29%;
+    margin: 0 1% 20px 1%;
+    border: 1px solid black;
+    padding: 10px;
+}
+.property{
+    width: 50%;
+    display: inline-block;
+}
+.blockProperty{
+    border-bottom: 1px solid #cdc5c5;
+    padding: 0 0 5px 0;
+}
+.blockCheck{
+    margin: 10px;
+    padding: 10px;;
+    background-color: #dfdfdf;
+}
+
+.blockCheck>div{
+    border-bottom: 1px solid #cdc5c5;;
+}
+.checkProperty{
+    display: inline-block;
+    width: 30%;
+}
+.buttonChange, .addCard{
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 30%;
+    height: 20px;
+    border-radius: 3px;
+    margin: 10px 0;
+    background-color: green;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+.buttonDelete{
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 30%;
+    height: 20px;
+    border-radius: 3px;
+    margin: 10px 0;
+    background-color: red;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+  }
+.Debet, .Credit{
+    margin: 10px;
+    padding: 10px;
+    background-color: #e7e7e7;
+    display: flex;
+    flex-direction: column;
+}
+.modalWindow{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    padding: 20px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.itemBlockInfo{
+    display: flex;
+}
+.itemBlockInfo>div{
+    width: 50%;
+    padding: 0 10px;
+}
+
+.popupWindow{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+.backgroundWindow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    opacity: 0.5;
+    background-color: black;
+}
+
+.buttonSave{
+    display: block;
+    width: 20%;
+    height: 20px;
+    background-color: green;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.buttonAddCard{
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 20px;
+    border-radius: 3px;
+    margin: 10px 0;
+    background-color: green;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+.sumSalary, .averageSalary, .salaryMinToMax{
+    display: inline-block;
+    border: 1px solid black;
+    width: fit-content;
+    padding: 20px;
+}
+.buttonSumSalary, .buttonAverageSalary, .buttonMinToMaxSalary, .buttonAmountEmployee{
+    display: block;
+    position: relative;
+    width: fit-content;
+    padding: 0 10px;
+    height: 20px;
+    border-radius: 3px;
+    margin: 10px 0;
+    background-color: green;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
